@@ -1,15 +1,4 @@
-@import url(../App.css);
-
-.profile_container {
-  position: absolute;
-  top: 10vh;
-
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  perspective: 1700px;
-  transition: all 0.5s ease
-}
+@import (../App.css);
 
 .profile_picture {
   

@@ -1,7 +1,10 @@
 import React, { useEffect, useRef } from 'react'
-import profilePicture from '../asset/profile_pic.jpg';
-import '../styles/Profile.css'
+
 import { useNavigate } from 'react-router-dom'
+
+import profilePicture from '../asset/profile_pic.jpg';
+import '../styles/common.css'
+import '../styles/Profile.css'
 
 function Profile() {
   const navigate = useNavigate();
@@ -55,11 +58,11 @@ function Profile() {
       scrollIcon.style.opacity = 1;
     }
 
-    setTimeout(showProfilePic, 1800);
-    setTimeout(showTitle, 2400);
-    setTimeout(showSubhead, 3000);
-    setTimeout(showDescription, 3600);
-    setTimeout(showScrollIcon, 4200);
+    setTimeout(showProfilePic, 1000);
+    setTimeout(showTitle, 1500);
+    setTimeout(showSubhead, 2000);
+    setTimeout(showDescription, 2500);
+    setTimeout(showScrollIcon, 3000);
 
   }, []);
 
@@ -104,7 +107,7 @@ function Profile() {
    return (
     <>
       <div
-        className="profile_container"
+        className="container"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         onWheel={handleWheel}

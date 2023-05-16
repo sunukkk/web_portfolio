@@ -4,9 +4,9 @@ import Nav from './components/Nav';
 import Profile from './components/Profile';
 import Transition from './transition/Transition';
 import Skills from './components/Skills';
-
-import './styles/reset.css'
+import './styles/common.css'
 import Works from './components/Works';
+import Sem from './components/Sem';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
             <Route path='/profile' element={<Profile />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/works' element={<Works />}>
-              <Route path='sem'  />
+              <Route path='sem' element={<Sem />} />
             </Route>
           </Routes>
         </Transition>

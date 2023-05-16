@@ -1,4 +1,4 @@
-@import '../App.css';
+@import url(../App.css);
 
 .skills_container {
   position: absolute;
