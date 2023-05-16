@@ -1,0 +1,32 @@
+body {
+  overflow: hidden;
+}
+
+.transition-group {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fade-enter {
+  opacity: 1;
+  transform: translateY(-200%);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s ease-in ;
+}
+
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-exit-active {
+  opacity: 1;
+  transform: translateY(200%);
+  transition: all 1s ease-in  ;
+}
+

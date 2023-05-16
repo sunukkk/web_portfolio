@@ -1,0 +1,89 @@
+@import url(../App.css);
+
+.profile_container {
+  position: absolute;
+  top: 10vh;
+
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1700px;
+  transition: all 0.5s ease
+}
+
+.profile_picture {
+  
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile_profilePic{
+  width: 15rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+  z-index: 2;
+  transition: all 0.2s ease-out;
+}
+
+.profile_contents{
+  perspective : 1000px;
+  transition: all 0.2s ease
+}
+
+.profile_contents h1 {
+  font-size: 3rem;
+  transition: all 0.75s ease-out;
+}
+.profile_contents h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 2rem 0rem;
+  color: #404040;
+  font-weight: lighter;
+  transition: all 0.75s ease-out;
+}
+
+.profile_contents p{
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 1.2;
+  color: #2a2a2a;
+  transition: all 0.75s ease-out;
+}
+
+.profile_scroll-icon-box{
+  margin-top: 10%;
+  display:flex;
+  justify-content: center;
+  transition: all 0.75s ease-out;
+}
+
+.profile_scroll-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 1.2em;
+  font-size: 22px;
+  color: rgba(#fff, .5);
+  border-radius: 2em;
+  border: solid 2px;
+  transition: .4s;
+  background-color: #fff;
+}
+
+.profile_scroll-icon::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  border-radius: 50%;
+  animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes scroll-icon {
+    0% { transform: translateY(-12px); opacity: 0; }
+   30%, 70% { opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}
