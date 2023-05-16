@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.c7fef263.css",
-    "main.js": "/static/js/main.8902800d.js",
-    "static/media/profile_pic.jpg": "/static/media/profile_pic.73a6213ad11666a7c62a.jpg",
-    "static/media/ReactLogo.svg": "/static/media/ReactLogo.f5927997775e305a4a9eb16770a68676.svg",
-    "static/media/PhotoshopLogo.svg": "/static/media/PhotoshopLogo.b527141d153a3615226b7e4540ec16a4.svg",
-    "static/media/IllustratorLogo.svg": "/static/media/IllustratorLogo.8814d8a6fdeaa3f5feeb21b98bcbcb0c.svg",
-    "static/media/JavaScriptLogo.svg": "/static/media/JavaScriptLogo.9d6651d3229ee73062f481f2750cc6a6.svg",
-    "static/media/FirebaseLogo.svg": "/static/media/FirebaseLogo.88217377c4d748d5d816ce0ca905cf0d.svg",
-    "static/media/SassLogo.svg": "/static/media/SassLogo.29d3f396226c8f9100a5d729e2ce0416.svg",
-    "static/media/NextjsLogo.svg": "/static/media/NextjsLogo.eb938a6bc0edd7fd884f13ef5f268937.svg",
-    "static/media/W3C_icon.svg": "/static/media/W3C_icon.dd9eceaa1c6a61544a6a7b7da33b5887.svg",
-    "static/media/ReduxLogo.svg": "/static/media/ReduxLogo.6189372462654f1e4805d74d9a7e6687.svg",
-    "static/media/HTMLLogo.svg": "/static/media/HTMLLogo.0b493f53dd1f9874e97377cf54fdb126.svg",
-    "static/media/CSS3Logo.svg": "/static/media/CSS3Logo.72fc95838578a3dfe1feb3b806c4ae06.svg",
-    "static/media/FigmaLogo.svg": "/static/media/FigmaLogo.d9c48fddd92fb0a780a0c1e3944eeb2a.svg",
-    "index.html": "/index.html",
-    "main.c7fef263.css.map": "/static/css/main.c7fef263.css.map",
-    "main.8902800d.js.map": "/static/js/main.8902800d.js.map"
+    "main.css": "/web_portfolio/static/css/main.c7fef263.css",
+    "main.js": "/web_portfolio/static/js/main.60f1898c.js",
+    "static/media/profile_pic.jpg": "/web_portfolio/static/media/profile_pic.73a6213ad11666a7c62a.jpg",
+    "static/media/ReactLogo.svg": "/web_portfolio/static/media/ReactLogo.f5927997775e305a4a9eb16770a68676.svg",
+    "static/media/PhotoshopLogo.svg": "/web_portfolio/static/media/PhotoshopLogo.b527141d153a3615226b7e4540ec16a4.svg",
+    "static/media/IllustratorLogo.svg": "/web_portfolio/static/media/IllustratorLogo.8814d8a6fdeaa3f5feeb21b98bcbcb0c.svg",
+    "static/media/JavaScriptLogo.svg": "/web_portfolio/static/media/JavaScriptLogo.9d6651d3229ee73062f481f2750cc6a6.svg",
+    "static/media/FirebaseLogo.svg": "/web_portfolio/static/media/FirebaseLogo.88217377c4d748d5d816ce0ca905cf0d.svg",
+    "static/media/SassLogo.svg": "/web_portfolio/static/media/SassLogo.29d3f396226c8f9100a5d729e2ce0416.svg",
+    "static/media/NextjsLogo.svg": "/web_portfolio/static/media/NextjsLogo.eb938a6bc0edd7fd884f13ef5f268937.svg",
+    "static/media/W3C_icon.svg": "/web_portfolio/static/media/W3C_icon.dd9eceaa1c6a61544a6a7b7da33b5887.svg",
+    "static/media/ReduxLogo.svg": "/web_portfolio/static/media/ReduxLogo.6189372462654f1e4805d74d9a7e6687.svg",
+    "static/media/HTMLLogo.svg": "/web_portfolio/static/media/HTMLLogo.0b493f53dd1f9874e97377cf54fdb126.svg",
+    "static/media/CSS3Logo.svg": "/web_portfolio/static/media/CSS3Logo.72fc95838578a3dfe1feb3b806c4ae06.svg",
+    "static/media/FigmaLogo.svg": "/web_portfolio/static/media/FigmaLogo.d9c48fddd92fb0a780a0c1e3944eeb2a.svg",
+    "index.html": "/web_portfolio/index.html",
+    "main.c7fef263.css.map": "/web_portfolio/static/css/main.c7fef263.css.map",
+    "main.60f1898c.js.map": "/web_portfolio/static/js/main.60f1898c.js.map"
   },
   "entrypoints": [
     "static/css/main.c7fef263.css",
-    "static/js/main.8902800d.js"
+    "static/js/main.60f1898c.js"
   ]
 }
