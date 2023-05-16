@@ -19,7 +19,7 @@ function Transition() {
           <Route path="/profile" element={<Profile/>}/>
           <Route path="/skills" element={<Skills/>} />
           <Route path='/works' element={<Works />}>
-            <Route path='sem' element={<Sem />} />
+            <Route path='/sem' element={<Sem />} />
           </Route>
         </Routes>
       </CSSTransition>

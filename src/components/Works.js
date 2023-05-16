@@ -15,7 +15,7 @@ function Works() {
     if (e.deltaY < 0) {
       navigate('/skills')
     } else {
-      navigate('/sem')
+      navigate('/works/sem')
     }
   }
   

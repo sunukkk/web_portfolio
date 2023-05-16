@@ -11,9 +11,9 @@ function Sem() {
   
   const handleWheel = (e) => {
     if (e.deltaY < 0) {
-      navigate('/profile')
+      navigate('/works')
     } else {
-      navigate('/skills')
+      navigate('/works')
     }
   }
   
@@ -25,7 +25,6 @@ function Sem() {
     <div class="container" onWheel={handleWheel}>
       <div className='card'>
         
-        내용내용  
       </div>
     </div>
     </>
