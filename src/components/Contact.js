@@ -10,7 +10,7 @@ function Works() {
   
   const handleWheel = (e) => {
     if (e.deltaY < 0) {
-      navigate('/profile')
+      navigate('/works/movieapp')
     } else {
       navigate('/')
     }
