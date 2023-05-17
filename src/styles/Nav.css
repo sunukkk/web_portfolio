@@ -1,7 +1,8 @@
 .Nav_depth1{
   position: absolute;
+  width: 400px;
   z-index: 9999;
-  top: 50%;
+  top: 10vh;
   left: 20px;
   margin: 0;
   display: flex;
@@ -9,8 +10,13 @@
   justify-content: center;
 }
 
+.Nav_depth1 li a.active {
+  font-weight: bold;
+  color: #333;
+}
+
 a {
-  color: black;
+  color: #888;
   text-decoration: none;
 }
 
@@ -21,8 +27,8 @@ a {
 }
 
 .Nav_depth2{
-  position: absolute;
-  left: 40px;
+  padding-left: 40px;
+  width: 400px;
 }
 
 .Nav_depth2 li {

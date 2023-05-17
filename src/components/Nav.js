@@ -1,29 +1,65 @@
-// Nav.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-import '../styles/common.css'
-import '../styles/Nav.css'
+import '../styles/common.css';
+import '../styles/Nav.css';
 
 function Nav() {
   return (
-    <>
-      <ul className='Nav_depth1'>
-        <li>
-          <Link to='/profile'>PROFILE</Link>
-        </li>
-        <li>
-         <Link to='/skills'>SKILLS</Link>
-        </li>
-        <li>
-          <Link to ='/works'>WORKS</Link>
-          <ul className='Nav_depth2'>
-            <li><Link to ='/works/sem' >SamsunSem</Link></li>
-          </ul>
-        </li>
-
-      </ul>
-    </>
+    <ul className="Nav_depth1">
+      <li>
+        <NavLink to="/" activeclassname="active">
+          HOME
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/profile" activeclassname="active">
+          PROFILE
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/skills" activeclassname="active">
+          SKILLS
+        </NavLink>
+      </li>
+      <li>
+        <NavLink to="/works" activeclassname="active">
+          WORKS
+        </NavLink>
+        <ul className="Nav_depth2">
+          <li>
+            <NavLink to="/works/sem" activeclassname="active">
+              Samsung EM
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/works/cjone" activeclassname="active">
+              CJ One
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/works/scnt" activeclassname="active">
+              Samsung C&T
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/works/messengerapp" activeclassname="active">
+              Messenger App
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/works/movieapp" activeclassname="active">
+              Movie App
+            </NavLink>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <NavLink to="/contact" activeclassname="active">
+          Contact
+        </NavLink>
+      </li>
+    </ul>
   );
 }
 

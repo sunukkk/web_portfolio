@@ -12,7 +12,7 @@ function Works() {
     if (e.deltaY < 0) {
       navigate('/profile')
     } else {
-      navigate('/skills')
+      navigate('/')
     }
   }
   
@@ -23,7 +23,12 @@ function Works() {
     <>
     <div className="container" onWheel={handleWheel}>
       <div className='card'>
-        
+        <div className="contact_contents">
+          <h3>Contact</h3>
+          <p>phone : 010 2976 4902</p>
+          <p>email : sunuk555@gmail.com</p>
+          <p>github</p>
+        </div>
     
       </div>
     </div>

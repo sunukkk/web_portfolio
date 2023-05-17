@@ -1,0 +1,60 @@
+.home_contents {
+  position: relative;
+  width: 35rem;
+  height: 80vh;
+  font: 400 1em/1.5 "Neuton";
+  background: #090d00;
+  color: rgba(255,255,255,.25);
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  border-radius: 30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+
+}
+
+.home_text {
+  width: 35rem;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+  margin-bottom: 30px;
+}
+  
+.home_text span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+
+	  animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  transform: translate3d(0,0,0);
+	  backface-visibility: hidden;
+
+  }
+
+
+/* Animate Background Image */
+
+@keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}

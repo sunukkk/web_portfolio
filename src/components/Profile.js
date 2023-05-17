@@ -1,12 +1,17 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import { useNavigate } from 'react-router-dom'
+import MouseIcon from './MouseIcon';
 
 import profilePicture from '../asset/profile_pic.jpg';
 import '../styles/common.css'
 import '../styles/Profile.css'
 
+
 function Profile() {
+  const [showScrollIcon, setShowScrollIcon] = useState(false);
+
+
   const navigate = useNavigate();
 
   const cardRef = useRef(null);
@@ -15,31 +20,29 @@ function Profile() {
   const titleRef = useRef(null);
   const subheadRef = useRef(null);
   const descriptionRef = useRef(null);
-  const scrollIconRef = useRef(null);
-
 
 
 
   useEffect(() => {
 
-    const card = cardRef.current;
     const profilePic = profilePicRef.current;
-    const contents = contentsRef.current;
     const title = titleRef.current;
     const subhead = subheadRef.current;
     const description = descriptionRef.current;
-    const scrollIcon = scrollIconRef.current;
+
     // 페이지가 로드될 때 각 요소가 하나씩 나타나도록 설정
 
     profilePic.style.opacity = 0;
+    profilePic.style.transform = 'scale(1.3)';
     title.style.opacity = 0;
     subhead.style.opacity = 0;
     description.style.opacity = 0;
-    scrollIcon.style.opacity = 0;
+
 
 
     const showProfilePic = () => {
       profilePic.style.opacity = 1;
+      profilePic.style.transform = 'scale(1)';
     };
 
     const showTitle = () => {
@@ -54,15 +57,14 @@ function Profile() {
       description.style.opacity = 1;
     }
 
-    const showScrollIcon = () =>{
-      scrollIcon.style.opacity = 1;
-    }
+
 
     setTimeout(showProfilePic, 1000);
     setTimeout(showTitle, 1500);
     setTimeout(showSubhead, 2000);
     setTimeout(showDescription, 2500);
-    setTimeout(showScrollIcon, 3000);
+    setTimeout(() => setShowScrollIcon(true), 3000);
+/*     setTimeout(showScrollIcon, 3000); */
 
   }, []);
 
@@ -98,7 +100,7 @@ function Profile() {
   
   const handleWheel = (e) => {
     if (e.deltaY < 0) {
-      return;
+      navigate('/')
     } else {
       navigate('/skills')
     }
@@ -126,9 +128,7 @@ function Profile() {
             <p className="profile_description" ref={descriptionRef}>
               소통하며 성장하는 개발자 김선욱 입니다
             </p>
-            <div className="profile_scroll-icon-box" ref={scrollIconRef}>
-              <div className="profile_scroll-icon"></div>
-            </div>
+            <MouseIcon show={showScrollIcon}/>
           </div>
         </div>
       </div>

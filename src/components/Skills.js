@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 import '../styles/common.css'
+import '../styles/Skills.css'
 
 import HtmlLogo from '../asset/HTMLLogo.svg';
 import CssLogo from '../asset/CSS3Logo.svg'
@@ -16,12 +18,10 @@ import AiLogo from '../asset/IllustratorLogo.svg'
 import FigmaLogo from '../asset/FigmaLogo.svg'
 
 
-import '../styles/Skills.css'
-import { useNavigate } from 'react-router-dom';
 function Skills() {
-  const navigate = useNavigate();
-  
 
+  
+  const navigate = useNavigate();
   
   const handleWheel = (e) => {
     if (e.deltaY < 0) {
@@ -39,12 +39,14 @@ function Skills() {
     <div class="container" onWheel={handleWheel}>
       <div className='card'>
         <div className = 'skills'>
+          <h2>Skills</h2>
           <div className ='skills_Row1'>
             <div className = 'skills_Row1_images'>
-              <img src={HtmlLogo} alt='HTMLLogo' />
-              <img src={CssLogo} alt='CSSLogo' />
-              <img src={SassLogo} alt='SassLogo' />
+              <img src={HtmlLogo} alt='HtmlLogo' />
+              <img src={CssLogo} alt='CssLogo' />
               <img src={W3CLogo} alt='W3CLogo' />
+              <img src={SassLogo} alt='SassLogo' />
+
             </div>
             <div className='skills_Row1_desc'>
               <p>웹 컨텐츠 접근성 지침, 웹 표준을 준수한 마크업</p>
@@ -79,7 +81,7 @@ function Skills() {
           </div> 
 
           <div className='skills_Row4'>
-            <div div className = 'skills_Row4_images'>
+            <div className = 'skills_Row4_images'>
               <img src={PsLogo} alt='PsLogo' />
               <img src={AiLogo} alt='AiLogo' />
               <img src={FigmaLogo} alt='FigmaLogo' />

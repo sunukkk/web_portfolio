@@ -1,0 +1,26 @@
+.li_contents{
+  height: 90px;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  border-bottom: 1px solid #333;
+  padding: 0 10px;
+}
+
+.logo{
+  width: 40%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img{max-width: 100%;}
+
+.text{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  height: 80%;
+  text-align: right;
+}
