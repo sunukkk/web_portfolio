@@ -20,7 +20,7 @@ function Transition() {
     <TransitionGroup className="transition-group">
       <CSSTransition key={location.pathname} classNames="fade" timeout={500}>
         <Routes location={location}>
-          <Route path='/' element={<Home />}/>
+          <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/works/*" element={<Works />} />
@@ -29,7 +29,7 @@ function Transition() {
           <Route path="/works/scnt" element={<Scnt title="Samsung Construction & Trade" date="2023.03" />} />
           <Route path="/works/messengerapp" element={<MessengerApp title="Messenger App" date="2023.04" />} />
           <Route path="/works/movieapp" element={<MovieApp title="Movie App" date="2023.05" />} />
-          <Route path='/contact' element={<Contact />}/>
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </CSSTransition>
     </TransitionGroup>

@@ -18,13 +18,13 @@ function App() {
 
 
   return (
+    <BrowserRouter basename="/web_portfolio">
     <div className='app'>
-      <BrowserRouter>
-
+      
         <Nav />
         <Transition>
           <Routes>
-            <Route path='/' element={<Home />}/>
+            <Route path="/" element={<Home />} />
             <Route path='/profile' element={<Profile />} />
             <Route path='/skills' element={<Skills />} />
             <Route path='/works/*' element={<Works />} />
@@ -36,20 +36,8 @@ function App() {
             <Route path='/contact' element={<Contact />}/>
           </Routes>
         </Transition>
-
-    </BrowserRouter>
-     {/*  <div className="waveWrapper waveAnimation">
-        <div className="waveWrapperInner bgTop">
-          <div className="wave waveTop" style={{ backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-top.png')" }}></div>
         </div>
-        <div className="waveWrapperInner bgMiddle">
-          <div className="wave waveMiddle" style={{ backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-mid.png')" }}></div>
-        </div>
-        <div className="waveWrapperInner bgBottom">
-          <div className="wave waveBottom" style={{ backgroundImage: "url('http://front-end-noobs.com/jecko/img/wave-bot.png')" }}></div>
-        </div>
-      </div> */}
-    </div>
+    </BrowserRouter> 
   );
 }
 

@@ -5,7 +5,7 @@ import '../styles/common.css'
 import '../styles/Works.css'
 
 import SamsungEMLogo from '../asset/SamsungEMLogo.svg'
-import CjoneLogo from '../asset/CjoneLogo.svg'
+import CjoneLogo from '../asset/CjoneLogo.svg';
 import SamsungCNTLogo from '../asset/SamsungCNTLogo.svg'
 import MessengerLogo from '../asset/MessengerLogo.svg'
 import MovieAppLogo from '../asset/MovieAppLogo.svg'

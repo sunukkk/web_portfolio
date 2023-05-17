@@ -23,16 +23,17 @@
 	border: 4px double rgba(255,255,255,.25);
 	border-width: 4px 0;
   margin-bottom: 30px;
+
 }
   
 .home_text span {
 
   	font: 700 4em/1 "Oswald", sans-serif;
-  	letter-spacing: 0;
+  	letter-spacing: 1.5;
   	padding: .25em 0 .325em;
 	  display: block;
 	  margin: 0 auto;
-  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+  	text-shadow: 0 0 40px rgba(255,255,255,.8);
 
 /* Clip Background Image */
 
