@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.d59b1663.css",
-    "main.js": "/web_portfolio/static/js/main.199f8dec.js",
+    "main.css": "/web_portfolio/static/css/main.d931626e.css",
+    "main.js": "/web_portfolio/static/js/main.1999b98b.js",
     "static/media/profile_pic.jpg": "/web_portfolio/static/media/profile_pic.73a6213ad11666a7c62a.jpg",
     "static/media/ReactLogo.svg": "/web_portfolio/static/media/ReactLogo.c6413b41ed8b2c3097e650f80ee45e18.svg",
     "static/media/facebook_emoji.png": "/web_portfolio/static/media/facebook_emoji.94aac6418254cc8e00c5.png",
@@ -22,11 +22,11 @@
     "static/media/CSS3Logo.svg": "/web_portfolio/static/media/CSS3Logo.6e3c782cb6d5bf348839d3f4fadeadd6.svg",
     "static/media/FigmaLogo.svg": "/web_portfolio/static/media/FigmaLogo.f25e36699a024cba4fd22a0fa6688041.svg",
     "index.html": "/web_portfolio/index.html",
-    "main.d59b1663.css.map": "/web_portfolio/static/css/main.d59b1663.css.map",
-    "main.199f8dec.js.map": "/web_portfolio/static/js/main.199f8dec.js.map"
+    "main.d931626e.css.map": "/web_portfolio/static/css/main.d931626e.css.map",
+    "main.1999b98b.js.map": "/web_portfolio/static/js/main.1999b98b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d59b1663.css",
-    "static/js/main.199f8dec.js"
+    "static/css/main.d931626e.css",
+    "static/js/main.1999b98b.js"
   ]
 }
