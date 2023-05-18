@@ -11,7 +11,6 @@ import '../styles/Profile.scss'
 function Profile() {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
 
-
   const navigate = useNavigate();
 
   const cardRef = useRef(null);

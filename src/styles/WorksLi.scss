@@ -3,8 +3,8 @@
   display:flex;
   align-items: center;
   justify-content:space-between;
-  border-bottom: 1px solid #333;
-  padding: 0 10px;
+
+
 
   .logo{
     width: 40%;
@@ -12,12 +12,9 @@
     align-items: center;
     justify-content: center;
 
-    img{
-      max-width: 100%;
-    }
   }
-  
   .text{
+    padding: 0 10px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;

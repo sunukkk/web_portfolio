@@ -1,9 +1,9 @@
 import React from 'react'
 
+import '../styles/Works.scss'
 import '../styles/WorksLi.scss'
 
 function WorksLi({logo, title1, title2, date}) {
-  console.log('logo-->', logo)
   return (
     <>
       <div className='li_contents'>

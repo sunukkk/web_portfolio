@@ -52,6 +52,11 @@ function Nav() {
               Movie App
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/works/facebookemoji" activeclassname="active">
+              Facebook Emoji
+            </NavLink>
+          </li>
         </ul>
       </li>
       <li>

@@ -8,10 +8,11 @@ import Works from '../components/Works';
 import Sem from '../components/Sem';
 import Cjone from '../components/Cjone';
 import Scnt from '../components/Scnt';
-import MessengerApp from '../components/MessengerApp';
+import MessengerApp from '../components/FacebookEmoji';
 import MovieApp from '../components/MovieApp';
 import Contact from '../components/Contact';
 import Home from '../components/Home';
+import FacebookEmoji from '../components/FacebookEmoji';
 
 function Transition() {
   const location = useLocation();
@@ -47,7 +48,7 @@ function Transition() {
 
       function Ball() {
         this.color = randomColor();
-        this.radius = Math.random() * 20 + 14;
+        this.radius = Math.random() * 20 + 80;
         this.startradius = this.radius;
         this.x = Math.random() * (tx - this.radius * 2) + this.radius;
         this.y = Math.random() * (ty - this.radius);
@@ -127,6 +128,7 @@ function Transition() {
           <Route path="/works/scnt" element={<Scnt title="Samsung Construction & Trade" date="2023.03" />} />
           <Route path="/works/messengerapp" element={<MessengerApp title="Messenger App" date="2023.04" />} />
           <Route path="/works/movieapp" element={<MovieApp title="Movie App" date="2023.05" />} />
+          <Route path="/works/facebookemoji" element={<FacebookEmoji title="Facebook Emoji Css" date="2023.01" />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </CSSTransition>
