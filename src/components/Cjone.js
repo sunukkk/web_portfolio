@@ -6,8 +6,8 @@ import CSS3Logo from '../asset/CSS3Logo.svg'
 import JsLogo from '../asset/JavaScriptLogo.svg'
 import W3CLogo from '../asset/W3C_icon.svg'
 
-import '../styles/common.css'
-import '../styles/Cjone.css'
+import '../styles/common.scss'
+import '../styles/Cjone.scss'
 import { useNavigate } from 'react-router-dom';
 function Cjone({title, date}) {
   const navigate = useNavigate();

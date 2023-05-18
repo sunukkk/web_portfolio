@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import MouseIcon from './MouseIcon';
 
 import profilePicture from '../asset/profile_pic.jpg';
-import '../styles/common.css'
-import '../styles/Profile.css'
+import '../styles/common.scss'
+import '../styles/Profile.scss'
 
 
 function Profile() {
@@ -71,28 +71,29 @@ function Profile() {
 
   const handleMouseMove = (e) => {
     // Moving Animation Event
-    let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-    let yAxis = (window.innerHeight / 2 - e.pageY) / 25;  
 
     const card = cardRef.current;
     const profilePic = profilePicRef.current;
-    const contents = contentsRef.current; 
+    const profileContents = contentsRef.current; 
+    
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 25;  
 
     card.style.transform = `rotateY(${-xAxis}deg) rotateX(${yAxis}deg) `;
     profilePic.style.transform = `translateY(-80px) scale(1.4) rotateY(${-xAxis}deg) rotateX(${yAxis}deg) `;
     profilePic.style.boxShadow = `0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2)`;
-    contents.style.transform = `translateZ(70px) rotateY(${-xAxis / 2}deg) rotateX(${yAxis / 2}deg)`;
+    profileContents.style.transform = `translateZ(70px) rotateY(${-xAxis / 2}deg) rotateX(${yAxis / 2}deg)`;
   };
 
   const handleMouseLeave = () => {
     // Animate Out
     const card = cardRef.current;
     const profilePic = profilePicRef.current;
-    const contents = contentsRef.current; 
+    const profileContents = contentsRef.current; 
 
     card.style.transition = "";
     card.style.transform = `rotateY(0deg) rotateX(0deg)`;
-    contents.style.transform = "translateZ(0px)";
+    profileContents.style.transform = "translateZ(0px)";
     profilePic.style.transform = "translateZ(0px) rotateZ(0deg)";
     profilePic.style.boxShadow = "none";
   };
@@ -122,9 +123,9 @@ function Profile() {
             <h1 className="profile_title" ref={titleRef}>
               Sun Wook Kim
             </h1>
-            <h3 className="profile_subhead" ref={subheadRef}>
+            <h2 className="profile_subhead" ref={subheadRef}>
               Frontend Developer
-            </h3>
+            </h2>
             <p className="profile_description" ref={descriptionRef}>
               소통하며 성장하는 개발자 김선욱 입니다
             </p>

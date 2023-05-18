@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/Mouseicon.css'
+import '../styles/Mouseicon.scss'
 
 function  MouseIcon({ show, black }) {
   return (

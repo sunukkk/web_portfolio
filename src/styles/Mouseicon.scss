@@ -1,0 +1,54 @@
+@import '../styles/common.scss';
+
+.mouse-icon {
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.75s ease-out;
+
+  &.visible{
+    opacity: 1;
+    visibility: visible;
+    color: rgba(0,0,0, 0.5);
+    &.black{
+      color: rgba(255,255,255, 0.5);
+    }
+  }
+
+  .profile_scroll-icon-box{
+    display:flex;
+    justify-content: center;
+    transition: all 0.75s ease-out;
+
+    .profile_scroll-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2em;
+      width: 1.2em;
+      font-size: 22px;
+      border-radius: 2em;
+      border: solid 2px;
+      transition: .4s;
+      background-color: #fff;
+
+      &::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: #000;
+        border-radius: 50%;
+        animation: scroll-icon 2.2s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+      }
+    }
+  }
+}
+
+
+
+
+@keyframes scroll-icon {
+    0% { transform: translateY(-12px); opacity: 0; }
+   30%, 70% { opacity: 1; }
+  100% { transform: translateY(12px); opacity: 0; }
+}

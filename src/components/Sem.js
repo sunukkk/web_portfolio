@@ -7,8 +7,8 @@ import JsLogo from '../asset/JavaScriptLogo.svg'
 import W3CLogo from '../asset/W3C_icon.svg'
 
 
-import '../styles/Sem.css'
-import '../styles/common.css'
+import '../styles/Sem.scss'
+import '../styles/common.scss'
 
 import { useNavigate } from 'react-router-dom';
 

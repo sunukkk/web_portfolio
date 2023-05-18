@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import '../styles/common.css'
-import '../styles/Works.css'
+import '../styles/common.scss'
+import '../styles/Works.scss'
 
 import SamsungEMLogo from '../asset/SamsungEMLogo.svg'
 import CjoneLogo from '../asset/CjoneLogo.svg';

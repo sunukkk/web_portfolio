@@ -1,0 +1,38 @@
+.Nav_depth1{
+  position: absolute;
+  width: 400px;
+  z-index: 9999;
+  top: 10vh;
+  left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  li{
+    list-style-type: none;
+    font-size: 2rem;
+    font-weight: bold;
+
+    a {
+      color: #888;
+      text-decoration: none;
+      
+      &.active {
+        font-weight: bold;
+        color: #333;
+      }
+    }
+
+
+
+    .Nav_depth2{
+      padding-left: 40px;
+      width: 400px;
+
+      li {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}

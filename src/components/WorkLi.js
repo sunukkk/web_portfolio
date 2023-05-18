@@ -1,6 +1,6 @@
 import React from 'react'
 
-import '../styles/WorksLi.css'
+import '../styles/WorksLi.scss'
 
 function WorksLi({logo, title1, title2, date}) {
   console.log('logo-->', logo)
@@ -15,7 +15,7 @@ function WorksLi({logo, title1, title2, date}) {
           <p>{title2}</p>
           <p>{date}</p>
         </div>
-        </div>
+      </div>
     </>
   )
 }

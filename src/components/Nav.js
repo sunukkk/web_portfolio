@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import '../styles/common.css';
-import '../styles/Nav.css';
+import '../styles/common.scss';
+import '../styles/Nav.scss';
 
 function Nav() {
   return (

@@ -6,7 +6,7 @@ import SassLogo from '../asset/SassLogo.svg'
 import FirebaseLogo from '../asset/FirebaseLogo.svg'
  
 
-import '../styles/common.css'
+import '../styles/common.scss'
 
 import { useNavigate } from 'react-router-dom';
 function MessengerApp({title, date}) {

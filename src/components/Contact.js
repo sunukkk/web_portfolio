@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 
-import '../styles/common.css'
+import '../styles/common.scss'
 
 import { useNavigate } from 'react-router-dom';
 function Works() {
