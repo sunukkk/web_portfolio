@@ -6,13 +6,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  
+  
   .titlebox{
     width: 100%;
     display:flex;
     flex-direction: column;
 
-    img{width: 50%;}
+    img{
+      width: 50%;
+      transition: all 0.75s ease-out;
+    }
 
     h2{
       font-weight: bold;
@@ -24,6 +28,7 @@
       text-align: left;
       font-size: 17px;
       font-weight: bold;
+      transition: all 0.75s ease-out;
     }
   }
 
@@ -44,6 +49,7 @@
       background: blue;
       width: 80%;
       height: 80%;
+      transition: all 0.75s ease-out;
     }
 
     .sample_tablet{
@@ -54,7 +60,8 @@
       border:1px solid yellow;
       background: yellow;
       width: 40%;
-      height : calc(40% / 9 * 16)
+      height : calc(40% / 9 * 16);
+      transition: all 0.75s ease-out;
     }
 
     .sample_mobile{
@@ -66,6 +73,7 @@
       background: black;
       width: 20%;
       height: calc(20% / 9 * 20);
+      transition: all 0.75s ease-out;
     }
   }
   
@@ -74,6 +82,7 @@
     height: 40px;
     display:flex;
     justify-content: space-between;
+    transition: all 0.75s ease-out;
 
     div{
       padding: 4px 0
@@ -82,7 +91,7 @@
     div{
       display:flex;
       align-items: center;
-      justify-content: start;
+      justify-content: flex-start;
       
       .date{
         font-size: 20px;
@@ -102,7 +111,8 @@
   }
   .descbox{
     width: 100%;
-    
+    transition: all 0.75s ease-out;
+
     .desc_title_link{
       display:flex;
       align-items: center;
@@ -125,6 +135,8 @@
     }
     
     ul{
+      transition: all 0.75s ease-out;
+      
       li{
         padding-left: 24px;
         margin-bottom: 8px;

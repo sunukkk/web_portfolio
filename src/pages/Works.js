@@ -16,10 +16,11 @@ import MouseIcon from '../components/MouseIcon';
 
 function Works() {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
-  const [hoveredDiv, setHoveredDiv] = useState('');
+  const [hoveredDiv, setHoveredDiv] = useState(false)
 
   const navigate = useNavigate();
 
+  const cardRef = useRef(null)
   const worksTitleRef = useRef(null);
   const worksSemRef = useRef(null);
   const worksCjoneRef = useRef(null);
@@ -29,6 +30,7 @@ function Works() {
   const worksFacebookEmojiRef = useRef(null);
 
   useEffect(() => {
+    
     const worksContents = [
       worksTitleRef.current,
       worksSemRef.current,
@@ -36,29 +38,32 @@ function Works() {
       worksScntRef.current,
       worksMessengerAppRef.current,
       worksMovieAppRef.current,
-      worksFacebookEmojiRef.current,
+      worksFacebookEmojiRef.current
     ];
 
-    worksContents.forEach((content) => {
-      content.style.opacity = 0;
+    worksContents.forEach(content => {
+
+        content.style.opacity = 0;
     });
 
     const showContent = (content, delay) => {
       setTimeout(() => {
-        content.style.opacity = 1;
+          content.style.opacity = 1;
       }, delay);
+
     };
 
     let delay = 1000;
-    worksContents.forEach((content) => {
+    worksContents.forEach(content => {
       showContent(content, delay);
       delay += 500;
     });
 
-    setTimeout(() => setShowScrollIcon(true), 4000);
+    setTimeout(() => setShowScrollIcon(true), 1000 + 500 * worksContents.length);
   }, []);
 
-  const skillsElements = {
+  const worksElements ={
+    card: cardRef.current,
     worksTitle: worksTitleRef.current,
     worksSem: worksSemRef.current,
     worksCjone: worksCjoneRef.current,
@@ -69,7 +74,8 @@ function Works() {
   };
 
   const transformStyles = {
-    worksTitle: (xAxis, yAxis) => `scale(1.3) translateZ(70px) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    card: (xAxis, yAxis) => `rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    worksTitle: (xAxis, yAxis) => `scale(1.3) translateZ(100px) rotateY(${-xAxis}deg) rotateX(${yAxis * 2}deg)`,
     worksSem: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
     worksCjone: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
     worksScnt: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
@@ -78,27 +84,25 @@ function Works() {
     worksFacebookEmoji: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
   };
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = e => {
+
     const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
     const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
 
-    Object.entries(skillsElements).forEach(([key, element]) => {
+    Object.entries(worksElements).forEach(([key, element]) => {
       element.style.transform = transformStyles[key](xAxis, yAxis);
     });
   };
 
-  const handleMouseEnter = (divName) => {
-    setHoveredDiv(divName);
-  };
-
   const handleMouseLeave = () => {
-    Object.values(skillsElements).forEach((element) => {
-      element.style.transform = 'translateY(0) scale(1) rotateY(0) rotateX(0)';
+    Object.values(worksElements).forEach((element) => {
+        element.style.transform = 'translateY(0) scale(1) rotateY(0) rotateX(0)';
+
     });
     setHoveredDiv(null);
   };
 
-  const handleWheel = (e) => {
+  const handleWheel =(e) => {
     if (e.deltaY < 0) {
       navigate('/skills');
     } else {
@@ -114,63 +118,77 @@ function Works() {
         onMouseLeave={handleMouseLeave}
         onWheel={handleWheel}
       >
-        <div className="card">
+        <div className="card" ref={cardRef}>
           <div className="works">
             <h2 ref={worksTitleRef}>Works</h2>
-            <Link to ='sem'>
+
+            <Link to="sem">
               <div
-                className={`worksSem ${hoveredDiv === 'worksSem' ? 'on' : ''}`}
+                className={`worksSem ${hoveredDiv === worksSemRef.current ? 'on' : ''}`}
                 ref={worksSemRef}
-                onMouseEnter={() => handleMouseEnter('worksSem')}
+                onMouseEnter={() => setHoveredDiv(worksSemRef.current)}
+                onMouseLeave={() => setHoveredDiv('')}
               >
                 <WorksLi logo={SamsungEMLogo} title1="Samsung" title2="Electro Mechanics" date="2023. 01" />
               </div>
             </Link>
-            <Link to = 'cjone'>
+
+            <Link to="cjone">
               <div
-                className={`worksCjone ${hoveredDiv === 'worksCjone' ? 'on' : ''}`}
+                className={`worksCjone ${hoveredDiv === worksCjoneRef.current ? 'on' : ''}`}
                 ref={worksCjoneRef}
-                onMouseEnter={() => handleMouseEnter('worksCjone')}
+                onMouseEnter={() => setHoveredDiv(worksCjoneRef.current)}
+                onMouseLeave={() => setHoveredDiv('')}
               >
                 <WorksLi logo={CjoneLogo} title1="CJ ONE" title2="" date="2023. 02" />
               </div>
             </Link>
-            <Link to = 'scnt'>
+
+            <Link to="scnt">
               <div
-                className={`worksScnt ${hoveredDiv === 'worksScnt' ? 'on' : ''}`}
+                className={`worksScnt ${hoveredDiv === worksScntRef.current ? 'on' : ''}`}
                 ref={worksScntRef}
-                onMouseEnter={() => handleMouseEnter('worksScnt')}
+                onMouseEnter={() => setHoveredDiv(worksScntRef.current)}
+                onMouseLeave={() => setHoveredDiv('')}
               >
                 <WorksLi logo={SamsungCNTLogo} title1="Samsung" title2="Construction & Trade" date="2023. 03" />
               </div>
             </Link>
-            <Link to = 'messengerapp'>
+
+            <Link to="messengerapp">
               <div
-                className={`worksMessengerApp ${hoveredDiv === 'worksMessengerApp' ? 'on' : ''}`}
+                className={`worksMessengerApp ${hoveredDiv === worksMessengerAppRef.current ? 'on' : ''}`}
                 ref={worksMessengerAppRef}
-                onMouseEnter={() => handleMouseEnter('worksMessengerApp')}
+                onMouseEnter={() => setHoveredDiv(worksMessengerAppRef.current)}
+                onMouseLeave={() => setHoveredDiv('')}
               >
                 <WorksLi logo={MessengerLogo} title1="Messenger" title2="Web App" date="2023. 04" />
               </div>
             </Link>
-            <Link to = 'moveiapp'>
+
+            <Link to="moveiapp">
               <div
-                className={`worksMovieApp ${hoveredDiv === 'worksMovieApp' ? 'on' : ''}`}
+                className={`worksMovieApp ${hoveredDiv === worksMovieAppRef.current ? 'on' : ''}`}
                 ref={worksMovieAppRef}
-                onMouseEnter={() => handleMouseEnter('worksMovieApp')}
+                onMouseEnter={() => setHoveredDiv(worksMovieAppRef.current)}
+                onMouseLeave={() => setHoveredDiv('')}
               >
                 <WorksLi logo={MovieAppLogo} title1="Movie" title2="Web App" date="2023. 05" />
               </div>
             </Link>
-            <Link to = 'facebookemoji'>
+
+            <Link to="facebookemoji">
               <div
-                className={`worksFacebookEmoji ${hoveredDiv === 'worksFacebookEmoji' ? 'on' : ''}`}
+                className={`worksFacebookEmoji ${hoveredDiv === worksFacebookEmojiRef.current ? 'on' : ''}`}
                 ref={worksFacebookEmojiRef}
-                onMouseEnter={() => handleMouseEnter('worksFacebookEmoji')}
+                onMouseEnter={() => setHoveredDiv(worksFacebookEmojiRef.current)}
+                onMouseLeave={() => setHoveredDiv('')}
               >
                 <WorksLi logo={FacebookEmoji} title1="Facebook" title2="Emoji" date="2023. 01" />
               </div>
             </Link>
+
+
             <MouseIcon show={showScrollIcon} />
           </div>
         </div>

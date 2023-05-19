@@ -22,13 +22,13 @@ const BallAnimation = () => {
 
       function Ball() {
         this.color = randomColor(); // 원의 색 설정
-        this.radius = Math.random() * 20 + 600; // 원의 크기 설정
+        this.radius = Math.random() * 20 + 400; // 원의 크기 설정
         this.startradius = this.radius;
         this.x = Math.random() * (tx + this.radius) - this.radius;
         this.y = Math.random() * (ty + this.radius * 2) - this.radius;
-        this.dy = Math.random() * 2; //y 방향 속도
+        this.dy = Math.random() * 10; //y 방향 속도
         this.dx = Math.round((Math.random() - 0.5) * 10);
-        this.vel = Math.random() / 5; //y 방향 가속도
+        this.vel = Math.random() / 50; //y 방향 가속도
         this.opacity = 0; //투명도 초기값
         this.fadeInSpeed = 0.05; // 페이드인 속도 설정
         this.fadeOutSpeed = 0.05; // 페이드아웃 속도 설정

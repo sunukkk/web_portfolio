@@ -44,7 +44,7 @@ function Skills() {
 
     const showContent = (content, delay) =>{
       setTimeout(() =>{
-        content.style.opacity =1;
+        content.style.opacity = 1;
       }, delay);
     };
 
@@ -54,7 +54,7 @@ function Skills() {
       delay += 500;
     })
 
-    setTimeout(() => setShowScrollIcon(true), 4000);
+    setTimeout(() => setShowScrollIcon(true), 1000 + 500*skillsContents.length);
 
   }, [])
 
@@ -77,6 +77,7 @@ function Skills() {
   };
   
   const handleMouseMove = e => {
+
     const xAxis = (window.innerWidth / 2 - e.pageX) / 25;
     const yAxis = (window.innerHeight / 2 - e.pageY) / 25;
   
@@ -96,6 +97,7 @@ function Skills() {
       navigate('/profile')
     } else {
       navigate('/works')
+      setShowScrollIcon(false)
     }
   }
   
