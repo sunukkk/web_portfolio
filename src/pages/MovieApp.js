@@ -18,7 +18,7 @@ function MovieApp({title, date}) {
     if (e.deltaY < 0) {
       navigate('/works/messengerapp')
     } else {
-      navigate('/contact')
+      navigate('/works/facebookemoji')
     }
   }
   

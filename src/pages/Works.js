@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-import '../styles/common.scss';
 import '../styles/Works.scss';
 import '../styles/WorksLi.scss';
 
@@ -12,8 +11,8 @@ import MessengerLogo from '../asset/MessengerLogo.svg';
 import MovieAppLogo from '../asset/MovieAppLogo.svg';
 import FacebookEmoji from '../asset/facebook_emoji.png';
 
-import WorksLi from './WorkLi';
-import MouseIcon from './MouseIcon';
+import WorksLi from '../components/WorkLi';
+import MouseIcon from '../components/MouseIcon';
 
 function Works() {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
@@ -96,7 +95,7 @@ function Works() {
     Object.values(skillsElements).forEach((element) => {
       element.style.transform = 'translateY(0) scale(1) rotateY(0) rotateX(0)';
     });
-    setHoveredDiv('');
+    setHoveredDiv(null);
   };
 
   const handleWheel = (e) => {

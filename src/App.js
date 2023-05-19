@@ -1,20 +1,20 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import Profile from './components/Profile';
+import Profile from './pages/Profile';
 import Transition from './transition/Transition';
-import Skills from './components/Skills';
+import Skills from './pages/Skills';
 
-import Works from './components/Works';
-import Sem from './components/Sem';
-import Cjone from './components/Cjone';
-import Scnt from './components/Scnt';
-import MessengerApp from './components/FacebookEmoji';
-import Contact from './components/Contact';
-import Home from './components/Home';
+import Works from './pages/Works';
+import Sem from './pages/Sem';
+import Cjone from './pages/Cjone';
+import Scnt from './pages/Scnt';
+import MessengerApp from './pages/FacebookEmoji';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
 
 import './styles/common.scss';
-import MovieApp from './components/MovieApp';
+import MovieApp from './pages/MovieApp';
 
 function App() {
 

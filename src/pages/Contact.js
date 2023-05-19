@@ -10,9 +10,9 @@ function Works() {
   
   const handleWheel = (e) => {
     if (e.deltaY < 0) {
-      navigate('/works/movieapp')
+      navigate('/works/facebookemoji')
     } else {
-      navigate('/')
+      return;
     }
   }
   

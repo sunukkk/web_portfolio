@@ -15,12 +15,13 @@
     font-weight: bold;
 
     a {
-      color: #888;
+      color: #333;
       text-decoration: none;
       
       &.active {
         font-weight: bold;
-        color: #333;
+        color: #eee;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
       }
     }
 

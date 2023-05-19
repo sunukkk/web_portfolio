@@ -1,11 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react'
-
 import { useNavigate } from 'react-router-dom'
-import MouseIcon from './MouseIcon';
+
 
 import profilePicture from '../asset/profile_pic.jpg';
-import '../styles/common.scss'
 import '../styles/Profile.scss'
+import MouseIcon from '../components/MouseIcon';
 
 
 function Profile() {
@@ -128,7 +127,8 @@ function Profile() {
             <p className="profile_description" ref={descriptionRef}>
               소통하며 성장하는 개발자 김선욱 입니다
             </p>
-            <MouseIcon show={showScrollIcon}/>
+            <MouseIcon
+             show={showScrollIcon}/>
           </div>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import '../styles/common.scss'
 import '../styles/Skills.scss'
 
 import HtmlLogo from '../asset/HTMLLogo.svg';
@@ -16,7 +15,7 @@ import NextLogo from '../asset/NextjsLogo.svg'
 import PsLogo from '../asset/PhotoshopLogo.svg'
 import AiLogo from '../asset/IllustratorLogo.svg'
 import FigmaLogo from '../asset/FigmaLogo.svg'
-import MouseIcon from './MouseIcon';
+import MouseIcon from '../components/MouseIcon';
 
 
 function Skills() {

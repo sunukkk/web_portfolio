@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
-import '../styles/common.scss'
 import '../styles/Home.scss'
 
 import { useNavigate } from 'react-router-dom';
-import MouseIcon from './MouseIcon';
+import MouseIcon from '../components/MouseIcon';
 
 function Home() {
   const [showScrollIcon, setShowScrollIcon] = useState(false);
