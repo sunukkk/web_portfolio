@@ -6,14 +6,14 @@ canvas{
 
 .container {
   position: absolute;
-  left: calc(50% - 30rem) ;
+  left: calc(50% - 20vw) ;
   top: 2vh;
   perspective: 1700px;
   transition: all 0.5s ease;
   padding: 3vh 200px ;
 
   .card {
-    width: 60rem;
+    width: 40vw;
     height: 90vh;
     display:flex;
     flex-direction: column;

@@ -69,11 +69,11 @@ function Skills() {
   
   const transformStyles = {
     card: (xAxis, yAxis) => `rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    skillsTitle: (xAxis, yAxis) => `translateX(20px) scale(1.4) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    skillsTitle: (xAxis, yAxis) => `translateX(-200px) scale(1.4) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
     row1Contents: (xAxis, yAxis) => `translateX(-250px) translateY(100px) scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    row2Contents: (xAxis, yAxis) => `translateX(250px) translateY(-60px) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    row3Contents: (xAxis, yAxis) => `translateX(-250px) translateY(100px) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    row4Contents: (xAxis, yAxis) => `translateX(250px) translateY(-60px) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`
+    row2Contents: (xAxis, yAxis) => `translateX(250px) translateY(-60px) scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    row3Contents: (xAxis, yAxis) => `translateX(-250px) translateY(100px) scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    row4Contents: (xAxis, yAxis) => `translateX(250px) translateY(-60px) scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`
   };
   
   const handleMouseMove = e => {
@@ -88,7 +88,7 @@ function Skills() {
   
   const handleMouseLeave = () => {
     Object.values(skillsElements).forEach(element => {
-      element.style.transform = 'translateY(0) scale(1) rotateY(0) rotateX(0)';
+      element.style.transform = 'translateX(0) translateY(0) scale(1) rotateY(0) rotateX(0)';
     });
   };
   
