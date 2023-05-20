@@ -1,32 +1,32 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.0f17d7dd.css",
-    "main.js": "/web_portfolio/static/js/main.29eb49e4.js",
+    "main.css": "/web_portfolio/static/css/main.14729c13.css",
+    "main.js": "/web_portfolio/static/js/main.e68cb331.js",
     "static/media/profile_pic.jpg": "/web_portfolio/static/media/profile_pic.73a6213ad11666a7c62a.jpg",
-    "static/media/ReactLogo.svg": "/web_portfolio/static/media/ReactLogo.c6413b41ed8b2c3097e650f80ee45e18.svg",
+    "static/media/ReactLogo.svg": "/web_portfolio/static/media/ReactLogo.f5927997775e305a4a9eb16770a68676.svg",
     "static/media/facebook_emoji.png": "/web_portfolio/static/media/facebook_emoji.94aac6418254cc8e00c5.png",
-    "static/media/MessengerLogo.svg": "/web_portfolio/static/media/MessengerLogo.fd9943a909837464ba3bb14a797cfa8f.svg",
-    "static/media/PhotoshopLogo.svg": "/web_portfolio/static/media/PhotoshopLogo.deea5d2706d4b2de879e0cb9f58bf3b7.svg",
-    "static/media/IllustratorLogo.svg": "/web_portfolio/static/media/IllustratorLogo.badf3bbfe0208123bf63525478a98d42.svg",
-    "static/media/JavaScriptLogo.svg": "/web_portfolio/static/media/JavaScriptLogo.324d09e9c90c86b8be977a9ce11835d2.svg",
+    "static/media/MessengerLogo.svg": "/web_portfolio/static/media/MessengerLogo.de65a5a5846e743b354f09e244029a6c.svg",
+    "static/media/PhotoshopLogo.svg": "/web_portfolio/static/media/PhotoshopLogo.b527141d153a3615226b7e4540ec16a4.svg",
+    "static/media/IllustratorLogo.svg": "/web_portfolio/static/media/IllustratorLogo.8814d8a6fdeaa3f5feeb21b98bcbcb0c.svg",
+    "static/media/JavaScriptLogo.svg": "/web_portfolio/static/media/JavaScriptLogo.9d6651d3229ee73062f481f2750cc6a6.svg",
     "static/media/CjoneLogo.svg": "/web_portfolio/static/media/CjoneLogo.2279b40acb83b083ce2507c1c273a57e.svg",
-    "static/media/FirebaseLogo.svg": "/web_portfolio/static/media/FirebaseLogo.d54cfe566e2b1bb52964f51f77b13a28.svg",
+    "static/media/FirebaseLogo.svg": "/web_portfolio/static/media/FirebaseLogo.88217377c4d748d5d816ce0ca905cf0d.svg",
     "static/media/SamsungEMLogo.svg": "/web_portfolio/static/media/SamsungEMLogo.eae7fbeefb5141b1c37be0375de6dab0.svg",
-    "static/media/SassLogo.svg": "/web_portfolio/static/media/SassLogo.013f2deee9c270e4905f571f2104e675.svg",
-    "static/media/NextjsLogo.svg": "/web_portfolio/static/media/NextjsLogo.16e43fbd3c013afff6871ef9da6e9417.svg",
+    "static/media/SassLogo.svg": "/web_portfolio/static/media/SassLogo.29d3f396226c8f9100a5d729e2ce0416.svg",
+    "static/media/NextjsLogo.svg": "/web_portfolio/static/media/NextjsLogo.eb938a6bc0edd7fd884f13ef5f268937.svg",
     "static/media/MovieAppLogo.svg": "/web_portfolio/static/media/MovieAppLogo.451a7ac29d287152010db077b7eb1928.svg",
     "static/media/SamsungCNTLogo.svg": "/web_portfolio/static/media/SamsungCNTLogo.d9fc9bb18154444d0d57a1a2e4b64694.svg",
-    "static/media/W3C_icon.svg": "/web_portfolio/static/media/W3C_icon.7fa8d44ae3c20e3a202d4f8acf81403c.svg",
+    "static/media/W3C_icon.svg": "/web_portfolio/static/media/W3C_icon.dd9eceaa1c6a61544a6a7b7da33b5887.svg",
     "static/media/ReduxLogo.svg": "/web_portfolio/static/media/ReduxLogo.6189372462654f1e4805d74d9a7e6687.svg",
-    "static/media/HTMLLogo.svg": "/web_portfolio/static/media/HTMLLogo.c521a697fd1225d94206d8c552a961cd.svg",
-    "static/media/CSS3Logo.svg": "/web_portfolio/static/media/CSS3Logo.6e3c782cb6d5bf348839d3f4fadeadd6.svg",
-    "static/media/FigmaLogo.svg": "/web_portfolio/static/media/FigmaLogo.f25e36699a024cba4fd22a0fa6688041.svg",
+    "static/media/HTMLLogo.svg": "/web_portfolio/static/media/HTMLLogo.0b493f53dd1f9874e97377cf54fdb126.svg",
+    "static/media/CSS3Logo.svg": "/web_portfolio/static/media/CSS3Logo.72fc95838578a3dfe1feb3b806c4ae06.svg",
+    "static/media/FigmaLogo.svg": "/web_portfolio/static/media/FigmaLogo.d9c48fddd92fb0a780a0c1e3944eeb2a.svg",
     "index.html": "/web_portfolio/index.html",
-    "main.0f17d7dd.css.map": "/web_portfolio/static/css/main.0f17d7dd.css.map",
-    "main.29eb49e4.js.map": "/web_portfolio/static/js/main.29eb49e4.js.map"
+    "main.14729c13.css.map": "/web_portfolio/static/css/main.14729c13.css.map",
+    "main.e68cb331.js.map": "/web_portfolio/static/js/main.e68cb331.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f17d7dd.css",
-    "static/js/main.29eb49e4.js"
+    "static/css/main.14729c13.css",
+    "static/js/main.e68cb331.js"
   ]
 }
