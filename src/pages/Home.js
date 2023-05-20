@@ -34,13 +34,19 @@ function Home() {
         <div className="card">
           <div className="home_contents">
             <p className='home_text'>
-              KIM SUN WOOK 
-              <span>
+
+              <span className='home_text_name'>
+                KIM SUN WOOK
+              </span>
+
+              <span className='home_text_title'>
                 Portfolio
               </span>
+
             </p>
-            <MouseIcon show={showScrollIcon} black={black} />
+            
           </div>
+          <MouseIcon show={showScrollIcon} black={black} />
         </div>
       </div>
     

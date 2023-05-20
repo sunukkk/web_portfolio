@@ -6,65 +6,68 @@ import '../styles/Nav.scss';
 
 function Nav() {
   return (
-    <ul className="Nav_depth1">
-      <li>
-        <NavLink to="/" activeclassname="active">
-          HOME
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/profile" activeclassname="active">
-          PROFILE
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/skills" activeclassname="active">
-          SKILLS
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/works" activeclassname="active">
-          WORKS
-        </NavLink>
-        <ul className="Nav_depth2">
-          <li>
-            <NavLink to="/works/sem" activeclassname="active">
-              Samsung EM
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/works/cjone" activeclassname="active">
-              CJ One
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/works/scnt" activeclassname="active">
-              Samsung C&T
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/works/messengerapp" activeclassname="active">
-              Messenger App
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/works/movieapp" activeclassname="active">
-              Movie App
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/works/facebookemoji" activeclassname="active">
-              Facebook Emoji
-            </NavLink>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <NavLink to="/contact" activeclassname="active">
-          Contact
-        </NavLink>
-      </li>
-    </ul>
+    <div className='Nav'>
+      <ul className="Nav_depth1">
+        <li className='Nav_li_home'>
+          <NavLink to="/" >
+            HOME
+          </NavLink>
+        </li>
+        
+        <li>
+          <NavLink to="/profile" >
+            PROFILE
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/skills" >
+            SKILLS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/works" >
+            WORKS
+          </NavLink>
+          <ul className="Nav_depth2">
+            <li>
+              <NavLink to="/works/sem" >
+                Samsung EM
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/works/cjone" >
+                CJ One
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/works/scnt" >
+                Samsung C&T
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/works/messengerapp" >
+                Messenger App
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/works/movieapp" >
+                Movie App
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/works/facebookemoji" >
+                Facebook Emoji
+              </NavLink>
+            </li>
+          </ul>
+        </li>
+        <li className='Nav_li_contact'>
+          <NavLink to="/contact" >
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+    </div>
   );
 }
 

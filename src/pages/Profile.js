@@ -78,7 +78,7 @@ function Profile() {
     let yAxis = (window.innerHeight / 2 - e.pageY) / 25;  
 
     card.style.transform = `rotateY(${-xAxis}deg) rotateX(${yAxis}deg) `;
-    profilePic.style.transform = `translateY(-80px) scale(1.4) rotateY(${-xAxis}deg) rotateX(${yAxis}deg) `;
+    profilePic.style.transform = `translateY(-40px) scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg) `;
     profilePic.style.boxShadow = `0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2)`;
     profileContents.style.transform = `translateZ(70px) rotateY(${-xAxis / 2}deg) rotateX(${yAxis / 2}deg)`;
   };
@@ -128,9 +128,9 @@ function Profile() {
             <p className="profile_description" ref={descriptionRef}>
               소통하며 성장하는 개발자 김선욱 입니다
             </p>
-            <MouseIcon
-             show={showScrollIcon}/>
+            
           </div>
+          <MouseIcon show={showScrollIcon}/>
         </div>
       </div>
     </>

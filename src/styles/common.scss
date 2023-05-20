@@ -1,17 +1,20 @@
 
 @import '../App.css';
+canvas{
+  pointer-events: none;
+}
 
 .container {
   position: absolute;
-  left: 25vw;
-  top: 7vh;
+  left: calc(50% - 30rem) ;
+  top: 2vh;
   perspective: 1700px;
   transition: all 0.5s ease;
   padding: 3vh 200px ;
 
   .card {
-    width: 40rem;
-    height: 80vh;
+    width: 60rem;
+    height: 90vh;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +40,6 @@ h2 {
 p{
   font-size: 16px;
   display:inline-block;
-  margin-bottom: 4px;
 }
 
 h3{
