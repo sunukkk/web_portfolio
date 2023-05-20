@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.14729c13.css",
-    "main.js": "/web_portfolio/static/js/main.e68cb331.js",
+    "main.css": "/web_portfolio/static/css/main.ed120749.css",
+    "main.js": "/web_portfolio/static/js/main.0399e640.js",
     "static/media/profile_pic.jpg": "/web_portfolio/static/media/profile_pic.73a6213ad11666a7c62a.jpg",
     "static/media/ReactLogo.svg": "/web_portfolio/static/media/ReactLogo.f5927997775e305a4a9eb16770a68676.svg",
     "static/media/facebook_emoji.png": "/web_portfolio/static/media/facebook_emoji.94aac6418254cc8e00c5.png",
@@ -22,11 +22,11 @@
     "static/media/CSS3Logo.svg": "/web_portfolio/static/media/CSS3Logo.72fc95838578a3dfe1feb3b806c4ae06.svg",
     "static/media/FigmaLogo.svg": "/web_portfolio/static/media/FigmaLogo.d9c48fddd92fb0a780a0c1e3944eeb2a.svg",
     "index.html": "/web_portfolio/index.html",
-    "main.14729c13.css.map": "/web_portfolio/static/css/main.14729c13.css.map",
-    "main.e68cb331.js.map": "/web_portfolio/static/js/main.e68cb331.js.map"
+    "main.ed120749.css.map": "/web_portfolio/static/css/main.ed120749.css.map",
+    "main.0399e640.js.map": "/web_portfolio/static/js/main.0399e640.js.map"
   },
   "entrypoints": [
-    "static/css/main.14729c13.css",
-    "static/js/main.e68cb331.js"
+    "static/css/main.ed120749.css",
+    "static/js/main.0399e640.js"
   ]
 }
