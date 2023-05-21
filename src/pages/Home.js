@@ -31,7 +31,7 @@ function Home() {
   return (
     
       <div className="container"onWheel={handleWheel}>
-        <div className="card">
+        <div className="card_home">
           <div className="home_contents">
             <p className='home_text'>
 
@@ -44,9 +44,10 @@ function Home() {
               </span>
 
             </p>
-            
+            <div className="home_mouseicon">
+              <MouseIcon show={showScrollIcon} black={black} />
+            </div>
           </div>
-          <MouseIcon show={showScrollIcon} black={black} />
         </div>
       </div>
     

@@ -3,10 +3,24 @@
 
 .works{
   transition: all 0.75s ease-out;
-  
+  padding-top: 2rem;
+
   h2{
-    padding: 10px 0 5px;
+    position: relative;
+    font-size: 2.625rem;
     font-weight: bold;
+    text-align: right;
+
+    &:after{
+      content:'';
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background-color: #000;
+      right: 0;
+      top: 120px;
+      
+    }
   }
 
   div{
@@ -24,12 +38,11 @@
 
     div{
       
-      width: 400px;
       transition: all 0.75s ease-out;
 
       img{
-        width: 120px;
-        height: 60px;
+        width: 60%;
+        height: 90px;
         margin: 0 8px;
       }
     }

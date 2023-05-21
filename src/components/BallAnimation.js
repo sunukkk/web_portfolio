@@ -4,8 +4,8 @@ import '../styles/BallAnimation.scss';
 const BallAnimation = () => {
   const canvasRef = useRef(null);
 
-  useEffect(() => {
-    const animateBalls = () => {
+  useEffect(() => { /* 255 170 92 */
+    const animateBalls = (r,g,b) => {
       const canvas = canvasRef.current; //canvas 요소 설정
       const c = canvas.getContext('2d');
       let tx = window.innerWidth;
@@ -13,12 +13,12 @@ const BallAnimation = () => {
       canvas.width = tx;
       canvas.height = ty;
       c.strokeWidth = 5;
+      
 
       const randomColor = () => {
-        const grayScale = Math.round(Math.random() * 255);
         const alpha = Math.ceil(Math.random() * 10) / 10; //투명도 설정
-        return `rgba(${grayScale}, ${grayScale}, ${grayScale}, ${alpha})`;
-      }; //랜덤한 색 설정. 무채색
+        return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+      }; 
 
       function Ball() {
         this.color = randomColor(); // 원의 색 설정
@@ -100,7 +100,9 @@ const BallAnimation = () => {
       };
     };
 
-    animateBalls();
+    animateBalls(255,185,81);
+
+
   }, []);
 
   return <canvas ref={canvasRef} />;

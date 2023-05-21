@@ -1,49 +1,77 @@
 @import url(../App.css);
+.profile{
+  padding-top: 100px;
+  text-align: center;
+  .profilePicture {
+    
+    height: 36vh;
+    
+    margin-bottom: 10%;
 
-.profilePicture {
-  
-  min-height: 35vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  .profile_profilePic{
-    width: 28rem;
-    border-radius: 50%;
-    border: 2px solid #000;
-    z-index: 2;
-    transition: all 0.75s ease-out;
+    .profile_profilePic{
+      width: 50%;
+      border-radius: 50%;
+      border: 2px solid #000;
+      z-index: -1;
+      transition: all 0.75s ease-out;
+    }
   }
-}
+
+  .profile_cat{
+    position: absolute;
+    left: 0;
+    bottom: 24%;
+    margin-left: 100px;
+    transition: all 0.75s ease-out;
+    font-size: 1.5rem;
+
+    &:after{
+      content:'';
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background: #000;
+      left: 0;
+      top: -30px;
+    }
+
+  }
+
   .profile_contents{
+    margin-top: 160px;
+    margin-left: 50%;
     transition: all 0.75s ease-out;
     line-height: 1.3rem;
 
-  
+
     h1 {
+      text-align: left;
       margin-top: 70px;
-      font-size: 3.5rem;
+      font-size: 2.625rem;
+      font-weight: bold;
+      letter-spacing: normal;
       transition: all 0.75s ease-out;
       
     }
 
     h2{
-      font-size: 1.7rem;
-      color: #7e7e7e;
+      font-size: 1.5rem;
+      color: #727272;
       text-align: left;
+      padding-bottom: 3rem;
     }
 
 
     p{
-      
+      text-align: left;
+      width: 100%;
       line-height: 1.3rem;
       font-weight: 500;
       font-size: 1.5rem;
       color: #2a2a2a;
       transition: all 0.75s ease-out;
       margin-bottom: 15px;
-      
     }
   }
-
+}
 

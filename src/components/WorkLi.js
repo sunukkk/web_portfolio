@@ -10,7 +10,7 @@ function WorksLi({logo, title1, title2, date}) {
         <div className='text'>
           <p>{title1}</p>
           <p>{title2}</p>
-          <p>{date}</p>
+          <p className='date'>{date}</p>
         </div>
       </div>
     </>

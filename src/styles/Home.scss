@@ -1,7 +1,7 @@
 .home_contents {
   position: relative;
-  width: 40vw;
-  height: 90vh;
+  width: 56rem;
+  height: 50rem;
   font: 400 1em/1.5 "Neuton";
   background: #090d00;
   color: rgba(255,255,255,.25);
@@ -14,7 +14,7 @@
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
 
   .home_text {
-    width: 55rem;
+    width: 100%;
     text-transform: uppercase;
     letter-spacing: .7em;
     display: inline-block;
@@ -65,7 +65,7 @@
     
 }
 
-.profile_scroll-icon{
-  position: absolute;
-  bottom: 5%;
+.home_mouseicon{
+  
 }
+

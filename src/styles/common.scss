@@ -6,19 +6,18 @@ canvas{
 
 .container {
   position: absolute;
-  left: calc(50% - 20vw) ;
+  left: calc(50% - 29rem + 100px) ;
   top: 2vh;
   perspective: 1700px;
   transition: all 0.5s ease;
-  padding: 3vh 200px ;
+  padding: 3vh 100px ;
+  border: 4px double rgba(255,255,255,0.8); 
+  border-radius: 30px;
 
   .card {
-    width: 40vw;
-    height: 90vh;
-    display:flex;
-    flex-direction: column;
+    width: 58rem;
+    height: 52rem;
     align-items: center;
-    justify-content: center;
     transform-style: preserve-3d;
     border-radius: 30px;
     padding: 0 4rem;
@@ -39,7 +38,6 @@ h2 {
 
 p{
   font-size: 16px;
-  display:inline-block;
 }
 
 h3{

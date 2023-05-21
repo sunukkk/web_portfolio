@@ -75,13 +75,13 @@ function Works() {
 
   const transformStyles = {
     card: (xAxis, yAxis) => `rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    worksTitle: (xAxis, yAxis) => `scale(1.3) translateZ(100px) rotateY(${-xAxis}deg) rotateX(${yAxis * 2}deg)`,
-    worksSem: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    worksCjone: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    worksScnt: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    worksMessengerApp: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    worksMovieApp: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
-    worksFacebookEmoji: (xAxis, yAxis) => `scale(1.2) rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    worksTitle: (xAxis, yAxis) => `translateZ(100px) rotateY(${-xAxis}deg) rotateX(${yAxis * 2}deg)`,
+    worksSem: (xAxis, yAxis) => ` rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    worksCjone: (xAxis, yAxis) => ` rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    worksScnt: (xAxis, yAxis) => ` rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    worksMessengerApp: (xAxis, yAxis) => ` rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    worksMovieApp: (xAxis, yAxis) => ` rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
+    worksFacebookEmoji: (xAxis, yAxis) => ` rotateY(${-xAxis}deg) rotateX(${yAxis}deg)`,
   };
 
   const handleMouseMove = e => {

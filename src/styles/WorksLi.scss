@@ -1,29 +1,38 @@
 .li_contents{
-  height: 90px;
+  width: 50rem;
+  height: 100px;
   display:flex;
   align-items: center;
   justify-content:space-between;
 
 
-
   .logo{
-    width: 40%;
+    
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     
     img{
       pointer-events: none;
     }
   }
   .text{
-    padding: 0 10px;
+    line-height: 1.2;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 50%;
     height: 80%;
     text-align: right;
+
+    p{
+      font-size: 20px;
+    }
+
+
+    .date{
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #525252;}
   }
 }
 

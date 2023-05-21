@@ -16,7 +16,7 @@
   display:flex;
   align-items: center;
   justify-content: center;
-  background: #eee;
+  background: rgb(255,237,226);
   font-family: 'Noto Sans KR', sans-serif;
   line-height: 1.5;
   overflow:hidden;

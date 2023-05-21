@@ -3,7 +3,7 @@
   position: fixed;
   z-index: 999;
   left: 0;
-  width: 30rem;
+  width: 21vw;
   height: 100vh;
 
   background: #fff;
@@ -19,11 +19,14 @@
     flex-direction: column;
     justify-content: center;
 
+  
     li{
       list-style-type: none;
-      font-size: 1.7rem;
+      font-size: 1.625rem;
       font-weight: bold;
       line-height: 1.6;
+      letter-spacing: 0.1px;
+      
 
       a {
         color: #333;
@@ -32,10 +35,10 @@
 
         &.active {
           position: relative;
-          font-size: 2.5rem;
+          font-size: 2.25rem;
           line-height: 1.35;
           font-weight: bold;
-          color: #ee5100;
+          color: #fe671f;
         }
       }
 
@@ -47,7 +50,7 @@
         width: 400px;
 
         li {
-          font-size: 1.4rem;
+          font-size: 1.3125rem;
 
           a{
             color: #666;
@@ -68,10 +71,31 @@
 }
 
 .Nav_li_home{
-  margin-bottom: 35px;
+  margin-bottom: 70px;
+
+  &:after{
+    content:'';
+    position: absolute;
+    width: 22px;
+    height: 1.3px;
+    background-color: #000;
+    top: 90px;
+    left: 0;
+
+  }
 
 }
 
 .Nav_li_contact{
-  margin-top: 30px;
+  margin-top: 70px;
+
+  &:after{
+    content:'';
+    position: absolute;
+    width: 22px;
+    height: 1.3px;
+    background-color: #000;
+    bottom: 90px;
+    left: 0;
+  }
 }

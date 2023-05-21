@@ -6,12 +6,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  padding:3rem 0;
+  transition: all 0.75s ease-out;
   
   .titlebox{
     width: 100%;
     display:flex;
     flex-direction: column;
+    margin-bottom: 3.5rem;
 
     img{
       width: 50%;
@@ -19,13 +21,29 @@
     }
 
     h2{
+      position: relative;
+      text-align: right;
       font-weight: bold;
+      font-size: 2.625em;
       padding: 10px 0;
       display:inline-block;
+      
+
+      &:after{
+        content:'';
+        position: absolute;
+        width: 30px;
+        height: 1px;
+        background: #000;
+        top: 138px;
+        right: 0;      
+      }
     }
 
     .descsummary{
-      text-align: left;
+      font-size: 1.5rem;
+      color: #636363;
+      text-align: right;
       font-size: 17px;
       font-weight: bold;
       transition: all 0.75s ease-out;
@@ -33,120 +51,105 @@
   }
 
   .samplebox{
+    width: 100%;
+    height: 100%;
     display:flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 10px;
-    width: 32rem;
     height: calc(32rem / 16 * 9 );
+    margin-bottom: 1rem;
+    transition: all 0.75s ease-out;
 
     .sample_pc{
       z-index: 1;
-      left: 5%;
       position: absolute;
-      border:1px solid blue;
-      background: blue;
-      width: 80%;
-      height: 80%;
+      border:1px solid #333;
+      padding: 1px;
+      border-radius: 8px;
+      height: 100%;
       transition: all 0.75s ease-out;
+
+      video{padding: 4px;}
     }
 
     .sample_tablet{
       z-index: 2;
       position: absolute;
+      border:1px solid #333;
+      border-radius: 8px;
       right: 10%;
-      bottom: 8%;
-      border:1px solid yellow;
-      background: yellow;
-      width: 40%;
+      bottom: -8%;
       height : calc(40% / 9 * 16);
       transition: all 0.75s ease-out;
+
+      video{padding: 4px;}
     }
 
     .sample_mobile{
       z-index: 3;
       right: 5%;
-      bottom: 5%;
+      bottom: -10%;
       position: absolute;
-      border:1px solid black;
-      background: black;
-      width: 20%;
+      border:1px solid #333;
+      border-radius: 8px;
       height: calc(20% / 9 * 20);
       transition: all 0.75s ease-out;
+
+      video{padding: 4px;}
     }
   }
   
-  .desc_date_skills{
-    width: 100%;
-    height: 40px;
-    display:flex;
-    justify-content: space-between;
-    transition: all 0.75s ease-out;
-
-    .datebox{
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      padding: 4px 0
-    }
-
-    .usedskillbox{
-      display:flex;
-      align-items: center;
-      justify-content: flex-start;
-      margin-right: 8px;
-      
-      .date{
-        font-size: 20px;
-        padding-left: 8px;
-        margin-bottom: 0;
-      }
-    }
-
-      .usedskill{
-        img{
-          padding-left: 4px;
-          height: 24px;
-          width: 28px;
-        }
-      }
-    
-  }
   .descbox{
     width: 100%;
-    transition: all 0.75s ease-out;
+    display:flex;
+    justify-content: space-between;
+    
 
-    .desc_title_link{
+    .date_skills_link{
       display:flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 40px;
+      flex-direction: column;
 
-      .desclink{
-        display:flex;
-        align-items: center;
-        justify-content: center;
+      div{
+        margin-bottom: 20px;
+        transition: all 0.75s ease-out;
+      }
 
-        .linkbox{
-          a{
-            display: inline-block;
-            margin: 0 8px;
-            border-bottom: 1px solid #ccc;
-          }
+      h3{
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 2px;
+      }
+    
+      .linkbox{
+        a{
+          margin-right: 1rem;
+          text-decoration: underline;
+        }
+        p{
+          text-decoration: underline;
         }
       }
+    }
+  }
+
+  .contentsbox{
+    transition: all 0.75s ease-out;
+
+    h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 2px;
     }
     
     ul{
-      transition: all 0.75s ease-out;
-      
-      li{
-        padding-left: 24px;
-        margin-bottom: 8px;
-      }
+      margin-bottom: 4rem;
     }
+  }
 
+  .mouseiconbox{
+    transition: all 0.75s ease-out;
   }
 }
+
 

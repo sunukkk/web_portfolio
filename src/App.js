@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Profile from './pages/Profile';
 import Transition from './transition/Transition';
-import Skills from './pages/Skills';
 
 import Works from './pages/Works';
 import Sem from './pages/Sem';
@@ -15,6 +14,7 @@ import Home from './pages/Home';
 
 import './styles/common.scss';
 import MovieApp from './pages/MovieApp';
+import Skills from './pages/Skills';
 
 function App() {
 
