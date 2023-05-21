@@ -2,7 +2,7 @@
 
 .skills{
   transition: all 0.75s ease-out;
-  padding-top: 80px;
+  padding-top: 32px;
 
   h2{
     position: relative;
@@ -26,12 +26,16 @@
       font-size: 1.5rem;
       border-bottom: 1px solid #000;
       margin-right: 1rem;
+      
+      &.on{
+        color: #ee5100;
+      }
     }
+
   }
 
   .skills_1{
-    display:none;
-
+    position: absolute;
     padding-top: 50px;
     margin-bottom: 2rem;
     .skills_1_images1{
@@ -53,7 +57,7 @@
   }
 
   .skills_2{
-    display: none;
+    position: absolute;
     .skills_2_images{
       display:flex;
       justify-content: space-between;
@@ -62,7 +66,7 @@
   }
 
   .skills_3{
-    
+    position: absolute;
     .skills_3_images{
       width: 80%;
       margin: 0 auto;
@@ -85,4 +89,13 @@
     font-size: 1.5em;
     line-height: 155%;
   }
+}
+
+.skills-section {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skills-section.active {
+  opacity: 1;
 }
