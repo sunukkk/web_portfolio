@@ -49,7 +49,7 @@ function MessengerApp({title, date }) {
     let delay = 1000;
     Contents.forEach((content) => {
       showContent(content, delay);
-      delay += 1;
+      delay += 300;
     })
 
     setTimeout(() => setShowScrollIcon(true), 500 * (Contents.length + 2))

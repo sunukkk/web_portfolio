@@ -56,7 +56,7 @@ function Works() {
     let delay = 1000;
     worksContents.forEach(content => {
       showContent(content, delay);
-      delay += 500;
+      delay += 300;
     });
 
     setTimeout(() => setShowScrollIcon(true), 1000 + 500 * worksContents.length);

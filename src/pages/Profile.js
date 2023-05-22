@@ -64,11 +64,11 @@ function Profile() {
 
 
     setTimeout(showProfilePic, 1000);
-    setTimeout(showCat, 1500);
-    setTimeout(showTitle, 2000);
-    setTimeout(showSubhead, 2500);
-    setTimeout(showDescription, 3000);
-    setTimeout(() => setShowScrollIcon(true), 3500);
+    setTimeout(showCat, 1300);
+    setTimeout(showTitle, 1600);
+    setTimeout(showSubhead, 1900);
+    setTimeout(showDescription, 2200);
+    setTimeout(() => setShowScrollIcon(true), 2500);
 /*     setTimeout(showScrollIcon, 3000); */
 
   }, []);
