@@ -48,3 +48,13 @@ h3{
 span{
   font-weight: bold;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .container{
+    top: 5vh;
+    .card{
+      width: 40rem;
+    }
+
+  }
+}
