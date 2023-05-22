@@ -114,7 +114,6 @@ function Profile() {
       navigate('/')
     } else {
       navigate('/skills')
-      setShowScrollIcon(false)
     }
   }
   

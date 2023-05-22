@@ -5,7 +5,7 @@ function WorksLi({logo, title1, title2, date}) {
     <>
       <div className='li_contents'>
         <div className='logo'>
-          <img src={logo}></img>
+          <img src={logo} alt={'logo'}></img>
         </div>
         <div className='text'>
           <p>{title1}</p>
