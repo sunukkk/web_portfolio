@@ -176,8 +176,8 @@ function Sem({title, date }) {
         </div>
       </div>
     </div>
-    {ModalOpen && <Modal setModalOpen={setModalOpen} ValHtml={semValHtml} ValCss={semValCss} ValLighthouse={semValLighthouse}/>}
   </div>
+  {ModalOpen && <Modal setModalOpen={setModalOpen} ValHtml={semValHtml} ValCss={semValCss} ValLighthouse={semValLighthouse}/>}
   </>
   )
 }

@@ -187,8 +187,8 @@ function Cjone({title, date }) {
         </div>
       </div>
     </div>
-    {ModalOpen && <Modal setModalOpen={setModalOpen} ValHtml={cjoneValHtml} ValCss={cjoneValCss} ValLighthouse={cjoneValLighthouse}/>}
   </div>
+  {ModalOpen && <Modal setModalOpen={setModalOpen} ValHtml={cjoneValHtml} ValCss={cjoneValCss} ValLighthouse={cjoneValLighthouse}/>}
   </>
   )
 }

@@ -187,8 +187,8 @@ function MovieApp({title, date }) {
         </div>
       </div>
     </div>
-    {ModalOpen && <Modal setModalOpen={setModalOpen} ValHtml={scntValHtml} ValCss={scntValCss} ValLighthouse={scntValLighthouse}/>}
   </div>
+  {ModalOpen && <Modal setModalOpen={setModalOpen} ValHtml={scntValHtml} ValCss={scntValCss} ValLighthouse={scntValLighthouse}/>}
   </>
   )
 }

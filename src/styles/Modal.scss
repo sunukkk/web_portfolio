@@ -1,8 +1,9 @@
 .Modal{
   position: fixed;
+  z-index: 9999;
   top: 0;
-  left: -150px;
-  width: 1400px;
+  left: 50px;
+  width: 1800px;
   height: 100%;
   padding: 30px;
   border-radius: 30px;
@@ -16,42 +17,70 @@
       border:1px solid rgba(0,0,0,0.5);
       border-radius: 10px;
       padding: 8px;
-      background: rgba(255,255,255,0.5);
+      background: rgba(255,255,255);
       opacity: 1;
       visibility: visible;
       transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
-      
-      &.closing{
-        opacity:0;
-        visibility: hidden;;
-      }
+      margin-bottom: 10px;
 
       h3{
         margin-bottom: 10px;
       }
-      button{
-        position: absolute;
-        right: 10px;
-        top: 10px;
-      }
+
       img{
         width: 100%;
       }
     }
 
+    .val_desc1{
+      position: absolute;
+      left: 60px;
+      font-weight: bold;
+      color: #fff;
+      background: transparent;
+      border:none;
+
+      h4{
+        font-weight: bold;
+      }
+    }
     .modal_htmlVal{
-      top: 60px;
-      left: 10px;
+      position: absolute;
+      width: 800px;
+      top: 100px;
+      left: 60px;
+      
     }
 
     .modal_cssVal{
-      top: 120px;
-      left: 40px;
+      position: absolute;
+      bottom: 40px;
+      left: 60px;
+      width: 800px;
     }
-
+    .val_desc2{
+      position: absolute;
+      right: 556px;
+      font-weight: bold;
+      color: #fff;
+      background: transparent;
+      border:none;
+    }
+    
     .modal_lightVal{
-      top: 200px;
-      left: 70px;
+      position: absolute;
+      width: 800px;
+      top: 100px;
+      right: 80px;
+    }
+    
+    .closeBtn{
+      position: absolute;
+      top: 40px;
+      right: 80px;
+      width: 40px;
+      height: 40px;
+
     }
   }
 
