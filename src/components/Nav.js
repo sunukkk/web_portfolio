@@ -1,12 +1,41 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react'
 import { NavLink } from 'react-router-dom';
 
 
 import '../styles/Nav.scss';
 
-function Nav() {
+function Nav({isNavOpen, setIsNavOpen}) {
+  
+  const navRef = useRef(null);
+  const btnRef = useRef(null);
+
+  useEffect(() => {
+    const nav = navRef.current;
+    const btn = btnRef.current;
+
+    if(isNavOpen===false){
+      nav.style.transform = 'translateX(-100%)';
+      btn.style.transform = 'translateX(100%)'
+    }else{
+      nav.style.transform = 'translateX(0)'
+      btn.style.transform = 'translateX(0)'
+    }
+  
+
+  }, [isNavOpen])
+  
+  const handleNavBtn = () => {
+    setIsNavOpen(!isNavOpen)
+  }
   return (
-    <div className='Nav'>
+    <div className='Nav' ref={navRef}>
+      <div className='hamburgerbox' ref={btnRef}>
+        <div className={`icon nav-icon ${isNavOpen === true ? 'open' : ''}`} onClick={handleNavBtn}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
       <ul className="Nav_depth1">
         <li className='Nav_li_home'>
           <NavLink to="/" >

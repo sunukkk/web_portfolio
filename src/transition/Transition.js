@@ -23,7 +23,7 @@ import Skills from '../pages/Skills';
 function Transition() {
   const location = useLocation();
   const [reverseTransition, setReverseTransition] = useState(false);
-
+  
   const handleWheel = (e) => {
     if (e.deltaY < 0) {
       setReverseTransition(true);
@@ -44,6 +44,7 @@ function Transition() {
         classNames={reverseTransition ? 'fade-reverse' : 'fade'}
         timeout={3000}
       >
+        
 
         <Routes location={location}>
           <Route path="/" ref={canvasRef} element={<Home />} />

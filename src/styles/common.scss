@@ -6,8 +6,8 @@ canvas{
 
 .container {
   position: absolute;
-  left: calc(50% - 29rem + 50px) ;
-  top: 2vh;
+  left: calc(50% - 28rem - 104px) ;
+  top: 5vh;
   perspective: 1700px;
   transition: all 0.5s ease;
   padding: 3vh 100px ;
@@ -49,12 +49,3 @@ span{
   font-weight: bold;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
-  .container{
-    top: 5vh;
-    .card{
-      width: 40rem;
-    }
-
-  }
-}

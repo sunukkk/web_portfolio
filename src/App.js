@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Profile from './pages/Profile';
@@ -18,15 +18,30 @@ import Skills from './pages/Skills';
 
 function App() {
 
-
+  const [isNavOpen, setIsNavOpen] = useState(false)
   
+  const appRef = useRef(null)
 
+  useEffect(() => {
+    const app = appRef.current;
+    const container = app.children[1].children[2];
+    
+    if(isNavOpen){
+      container.style.left = 'calc(50% - 28rem + 104px)'
+    }else{
+      container.style.left = 'calc(50% - 28rem - 104px)'
+    }
+    
+    
+    
+  }, [isNavOpen])
+  
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <div className='app'>
+      <div className='app' ref={appRef}>
         
-          <Nav />
+          <Nav isNavOpen = {isNavOpen} setIsNavOpen={setIsNavOpen}/>
           <Transition>
             <Routes>
               <Route path="/" element={<Home />} />
