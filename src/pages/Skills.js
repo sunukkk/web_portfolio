@@ -163,7 +163,7 @@ function Skills() {
       setTimeout(() => {
         setActivePagination(pageNumber);
         setIsAnimating(false);
-      }, 300); // Wait for the animation duration
+      }, 300); 
     }
   };
 

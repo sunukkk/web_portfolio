@@ -127,7 +127,7 @@ function MovieApp({title, date }) {
           <div className="titlebox">
             
             <h2 ref={titleRef}>{title}</h2>
-            <p className='descsummary' ref={descSumRef}>웹 컨텐츠 접근성 지침 및 웹표준을 준수한 삼성물산 사이트</p>
+            <p className='descsummary' ref={descSumRef}>React, Firebase, Axios를 이용한 영화 앱</p>
           </div>
 
           <div className="samplebox" ref={sampleBoxRef}>
@@ -166,11 +166,14 @@ function MovieApp({title, date }) {
             <div className="contentsbox" ref={contentsBoxRef}>
               <h3>Contents</h3>
               <ul>
-                <li><span>W3C</span> 유효성 검사 통과</li>
-                <li><span>CSS / JS </span> 이용한 이미지 슬라이드 애니메이션 및 마우스오버 효과 구현</li>
-                <li>PC, Tablet, Mobile 사이즈에 따른 <span> 반응형 웹 </span>제작</li>
-                <li><span> AJAX로딩</span>으로 서버와 비동기 통신 및 코드의 재사용성, 유지보수성 향상</li>
-                <li><span>반응형</span> 웹 제작</li>
+                
+                <li><span>Firebase Auth</span>를 통해 회원가입 및 로그인, 소셜로그인 기능 </li>
+                <li><span>Firebase Auth, DB, Storage</span>를 이용한 프로필 설정 기능</li>
+                <li><span>Axios</span>로 외부 API 호출 및 데이터 전달</li>
+                <li><span>Swiper</span>플러그인을 사용한 캐러셀 구현</li>
+                <li><span>영화정보를 보여주는 모달창 구현</span></li>
+                <li>검색 및 모달창 관련 <span>사용자 정의 Hook 함수 사용</span></li>
+                <li>JSX, SCSS를 사용한 스타일링</li>
               </ul>
             </div>
             <div className='mouseiconbox' ref={mouseiconBoxRef}>
