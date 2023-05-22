@@ -18,30 +18,13 @@ import Skills from './pages/Skills';
 
 function App() {
 
-  const [isNavOpen, setIsNavOpen] = useState(false)
-  
-  const appRef = useRef(null)
-
-  useEffect(() => {
-    const app = appRef.current;
-    const container = app.children[1].children[2];
-    
-    if(isNavOpen){
-      container.style.left = 'calc(50% - 28rem + 104px)'
-    }else{
-      container.style.left = 'calc(50% - 28rem - 104px)'
-    }
-    
-    
-    
-  }, [isNavOpen])
   
 
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <div className='app' ref={appRef}>
+      <div className='app'>
         
-          <Nav isNavOpen = {isNavOpen} setIsNavOpen={setIsNavOpen}/>
+          <Nav/>
           <Transition>
             <Routes>
               <Route path="/" element={<Home />} />

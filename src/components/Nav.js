@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 
 
 import '../styles/Nav.scss';
 
-function Nav({isNavOpen, setIsNavOpen}) {
-  
+function Nav() {
+  const [isNavOpen, setIsNavOpen] = useState(true);
   const navRef = useRef(null);
   const btnRef = useRef(null);
 
