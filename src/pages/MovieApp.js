@@ -104,6 +104,7 @@ function MovieApp({title, date }) {
     });
   };
 
+  
 
 
   const handleWheel = (e) => {
