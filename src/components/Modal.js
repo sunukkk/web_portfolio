@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import useOnClickOutside from '../hooks/useOnClickOutside';
 import '../styles/Modal.scss';
 
@@ -19,8 +19,7 @@ function Modal({ setModalOpen, ValHtml, ValCss, ValLighthouse }) {
   return (
     <div className="Modal" ref={ref}>
       <div className="modal_contents">
-       
-       
+
           <div className="val_desc1">
             <h4>W3C 웹 표준 검사</h4>
             <p>W3C의 HTML 유효성 검사와 CSS 유효성 검사 통과 / 웹 표준을 준수하여 프로젝트 제작</p>
@@ -30,8 +29,6 @@ function Modal({ setModalOpen, ValHtml, ValCss, ValLighthouse }) {
             <h3>HTML VALIDATOR</h3>
             <img src={ValHtml} alt="HTML VALIDATOR" />
           </div>
-        
-
       
           <div className={'modal_cssVal'}>
             <h3>CSS VALIDATOR</h3>
