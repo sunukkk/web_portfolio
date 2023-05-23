@@ -149,53 +149,53 @@ function FacebookEmoji({title, date }) {
 
           <div className="samplebox" ref={sampleBoxRef}>
             <div className="sample" >
-              <div class="emoji emoji_like" ref={likeRef}>
-                <div class="emoji_hand">
-                  <div class="emoji_thumb"></div>
+              <div className="emoji emoji_like" ref={likeRef}>
+                <div className="emoji_hand">
+                  <div className="emoji_thumb"></div>
                 </div>
               </div>
 
-              <div class="emoji emoji_love" ref={loveRef}> 
-                <div class="emoji_heart"></div>
+              <div className="emoji emoji_love" ref={loveRef}> 
+                <div className="emoji_heart"></div>
               </div>
 
-              <div class="emoji emoji_haha" ref={hahaRef}>
-                <div class="emoji_face">
-                  <div class="emoji_eyes"></div>
-                  <div class="emoji_mouth">
-                    <div class="emoji_tongue"></div>
+              <div className="emoji emoji_haha" ref={hahaRef}>
+                <div className="emoji_face">
+                  <div className="emoji_eyes"></div>
+                  <div className="emoji_mouth">
+                    <div className="emoji_tongue"></div>
                   </div>
                 </div>
               </div>
 
-              <div class="emoji emoji_yay" ref={yayRef}>
-                <div class="emoji_face">
-                  <div class="emoji_eyebrows"></div>
-                  <div class="emoji_mouth"></div>
+              <div className="emoji emoji_yay" ref={yayRef}>
+                <div className="emoji_face">
+                  <div className="emoji_eyebrows"></div>
+                  <div className="emoji_mouth"></div>
                 </div>
               </div>
               
-              <div class="emoji emoji_wow" ref={wowRef}>
-                <div class="emoji_face">
-                  <div class="emoji_eyebrows"></div>
-                  <div class="emoji_eyes"></div>
-                  <div class="emoji_tongue"></div>
+              <div className="emoji emoji_wow" ref={wowRef}>
+                <div className="emoji_face">
+                  <div className="emoji_eyebrows"></div>
+                  <div className="emoji_eyes"></div>
+                  <div className="emoji_tongue"></div>
                 </div>
               </div>
 
-              <div class="emoji emoji_sad" ref={sadRef}>
-                <div class="emoji_face">
-                  <div class="emoji_eyebrows"></div>
-                  <div class="emoji_eyes"></div>
-                  <div class="emoji_mouth"></div>
+              <div className="emoji emoji_sad" ref={sadRef}>
+                <div className="emoji_face">
+                  <div className="emoji_eyebrows"></div>
+                  <div className="emoji_eyes"></div>
+                  <div className="emoji_mouth"></div>
                 </div>
               </div>
 
-              <div class="emoji emoji_angry" ref={angryRef}>
-                <div class="emoji_face">
-                  <div class="emoji_eyebrows"></div>
-                  <div class="emoji_eyes"></div>
-                  <div class="emoji_mouth"></div>
+              <div className="emoji emoji_angry" ref={angryRef}>
+                <div className="emoji_face">
+                  <div className="emoji_eyebrows"></div>
+                  <div className="emoji_eyes"></div>
+                  <div className="emoji_mouth"></div>
                 </div>
               </div>
             </div>

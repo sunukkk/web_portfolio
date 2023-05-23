@@ -122,6 +122,7 @@ function Cjone({title, date }) {
 
   return (
     <>
+
     <div className="container"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
