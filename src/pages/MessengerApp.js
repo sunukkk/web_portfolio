@@ -126,7 +126,7 @@ function MessengerApp({title, date }) {
           <div className="samplebox" ref={sampleBoxRef}>
             <div className="sample_mobile" ref={sampleMobileRef} style={{ width:'200px', height:'300px', right:'36%', bottom:'5%'}}>
             <video src={process.env.PUBLIC_URL + '/videos/Messenger_App.mp4'} autoPlay loop muted
-                  width={'200px'} height={'300px'}>
+                  width={'200px'} height={'300px'} preload='auto'>
 
                 
               </video>

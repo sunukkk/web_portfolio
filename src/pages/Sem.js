@@ -134,7 +134,7 @@ function Sem({title, date }) {
 
           <div className="samplebox" ref={sampleBoxRef}>
             <div className="sample_pc" ref={samplePcRef}>
-              <video src={process.env.PUBLIC_URL + '/videos/Sem_PC.mp4'} autoPlay loop muted width={'100%'} height={'100%'}></video>
+              <video src={process.env.PUBLIC_URL + '/videos/Sem_PC.mp4'} autoPlay loop muted width={'100%'} height={'100%'} preload='auto'></video>
             </div>
             
           </div>
