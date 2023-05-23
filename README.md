@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Sunukkk's portfolio
+웹 포트폴리오 프로젝트 입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### 제작에 사용된 기술목록
+<a href="/" target="_blank"><img src="https://img.shields.io/badge/Javascript-EEE?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/></a> 
+<a href="/" target="_blank"><img src="https://img.shields.io/badge/html5-EEE?style=for-the-badge&logo=html5&logoColor=E34F26"/></a> 
+<a href="/" target="_blank"><img src="https://img.shields.io/badge/css3-EEE?style=for-the-badge&logo=css3&logoColor=1572B6"/></a> 
+<a href="/" target="_blank"><img src="https://img.shields.io/badge/sass-EEE?style=for-the-badge&logo=sass&logoColor=CC6699"/></a>
+<a href="/" target="_blank"><img src="https://img.shields.io/badge/react-EEE?style=for-the-badge&logo=react&logoColor=61DAFB"/></a>
+<a href="/" target="_blank"><img src="https://img.shields.io/badge/photoshop-EEE?style=for-the-badge&logo=adobephotoshop&logoColor=31A8FF"/></a>
+<a href="/" target="_blank"><img src="https://img.shields.io/badge/illustrator-EEE?style=for-the-badge&logo=adobeillustrator&logoColor=FF9A00"/></a>
+<a href="/" target="_blank"><img src="https://img.shields.io/badge/figma-EEE?style=for-the-badge&logo=figma&logoColor=F24E1E"/></a> 
 
-## Available Scripts
+### 주요 내용
+- React로 만든 웹페이지 입니다. <br />
+각 Page와 반복사용되는 요소들을 컴포넌트로 제작 했습니다.
 
-In the project directory, you can run:
+- 배경 canvas에 랜덤하게 만들어지는 원이 움직입니다.<br />
+좌측 Navigation 메뉴는 햄버거버튼으로 열고 닫을 수 있습니다.
 
-### `npm start`
+- 모든 장면에서 마우스 위치에 따라 각각의 요소들이 3d로 움직입니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 메뉴 구성
+  - Home, Profile, Contact : 기본적인 내용들입니다.
+  - Works : 각각의 페이지로 연결된 링크들을 모아놓은 페이지입니다.
+  - Samsung EM : 삼성전기 사이트 클론 프로젝트 입니다.
+  - Cj One : Cj One 사이트 클론 프로젝트 입니다.
+  - Samsung C&T : 삼성물산 사이트 클론 프로젝트 입니다.
+  - Messenger App : 기초적인 메신저 앱 제작 프로젝트 입니다.
+  - Movie App : 넷플릭스와 같은 구성으로, 영화정보를 확인할수 있는 앱 프로젝트 입니다. 
+  - Facebook Emoji : pure css로 만든 페이스북 이모지 모음입니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 사용된 주요 라이브러리
+- gh-pages: GitHub 페이지에 정적 리소스를 호스팅했습니다.
+- react-router-dom 으로 React 기반 SPA의 라우팅을 관리합니다.
+- react-transition-group 라이브러리 사용으로 화면 전환 효과를 적용했습니다.
+- sass : scss를 활용한 스타일링으로 제작했습니다.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+감사합니다.
