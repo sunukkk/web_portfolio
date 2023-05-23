@@ -1,24 +1,23 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { Route, useLocation, Routes } from 'react-router-dom';
 
+import Nav from '../components/Nav';
+import BallAnimation from '../components/BallAnimation';
+
 import Home from '../pages/Home';
 import Profile from '../pages/Profile';
+import Skills from '../pages/Skills';
 import Works from '../pages/Works';
 import Sem from '../pages/Sem';
 import Cjone from '../pages/Cjone';
 import Scnt from '../pages/Scnt';
 import MessengerApp from '../pages/MessengerApp';
 import MovieApp from '../pages/MovieApp';
-
-
-import Contact from '../pages/Contact';
 import FacebookEmoji from '../pages/FacebookEmoji';
+import Contact from '../pages/Contact';
 
-import BallAnimation from '../components/BallAnimation';
 import '../transition/Transition.css';
-import Skills from '../pages/Skills';
-
 
 function Transition() {
   const location = useLocation();
@@ -36,6 +35,8 @@ function Transition() {
   
 
   return (
+    <>
+    <Nav />
     <TransitionGroup className="transition-group" onWheel={handleWheel}>
       <canvas ref={canvasRef} id="canvas"></canvas>
       <BallAnimation />
@@ -44,8 +45,6 @@ function Transition() {
         classNames={reverseTransition ? 'fade-reverse' : 'fade'}
         timeout={3000}
       >
-        
-
         <Routes location={location}>
           <Route path="/" ref={canvasRef} element={<Home />} />
           <Route path="/profile" element={<Profile />} />
@@ -61,6 +60,7 @@ function Transition() {
         </Routes>
       </CSSTransition>
     </TransitionGroup>
+    </>
   );
 }
 
