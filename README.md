@@ -1,3 +1,5 @@
+<hr/>
+
 # Sunukkk's portfolio
 웹 포트폴리오 프로젝트 입니다.
 
@@ -10,6 +12,8 @@
 <a href="/" target="_blank"><img src="https://img.shields.io/badge/photoshop-EEE?style=for-the-badge&logo=adobephotoshop&logoColor=31A8FF"/></a>
 <a href="/" target="_blank"><img src="https://img.shields.io/badge/illustrator-EEE?style=for-the-badge&logo=adobeillustrator&logoColor=FF9A00"/></a>
 <a href="/" target="_blank"><img src="https://img.shields.io/badge/figma-EEE?style=for-the-badge&logo=figma&logoColor=F24E1E"/></a> 
+
+<hr/>
 
 ### 주요 내용
 - React로 만든 웹페이지 입니다. <br />
@@ -37,3 +41,5 @@
 - sass : scss를 활용한 스타일링으로 제작했습니다.
 
 감사합니다.
+
+<hr/>
